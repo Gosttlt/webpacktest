@@ -37,7 +37,7 @@ module.exports = {
             chunks: 'all'
         },
         minimizer: [
-            new CssMinimizerPlugin(),
+            new CssMinimizerPlugin(), //minimizer css файлов
         ],
     },
     resolve: {
@@ -61,7 +61,7 @@ module.exports = {
                 { from: "favicon.ico", to: "" },
             ],
         }),
-        new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({ 
             filename: fileName('css')
         })
     ],
